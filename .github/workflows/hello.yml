@@ -1,0 +1,23 @@
+# Workflow 
+# Should Have Name
+name: Hello
+# on tells when the workflow should run (give indentation tab)
+on: 
+  workflow_dispatch: 
+
+# Jobs
+# Should be inside the workflow
+# jobs tells what ithe workflow should do there can be one or more then one jobs, hence we write jobs branch_protection_rule:
+# jobs is an object so needs indentation
+jobs:
+  say-hello:
+  # create an ephermeral Container with container with ubantu running  
+    runs-on: ubantu-latest
+    steps:
+      - name: Say hello to everyone
+        run: echo "Hellow Dosto"
+# Steps
+# Should be inside the job
+
+# Actions
+# Should be inside the Steps
